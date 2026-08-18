@@ -13,7 +13,9 @@
 .pages-tittle {
     @apply text-[1.75rem] sm:text-[2.25rem] md:text-[2.75rem] lg:text-[3rem] font-bold text-white text-center;
 }
-
+.pages-tittle-interactive{
+    @apply text-[1.25rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold text-white text-center;
+}
 .temp-out {
     @apply outline-2 outline-white outline-solid outline-offset-2;
 }

@@ -50,9 +50,8 @@ function Responsive() {
   }, []);
 
   return (
-    <div className="pages">
-      <h1 className="pages-tittle text-center">Responsive Design</h1>
-
+    <div className="pages !outline-none !outline-b-0">
+      <h3 className="pages-tittle-interactive text-center">Responsive Interaction</h3>
       <p className="text-white/60 -mt-4 mb-4 text-center max-w-2xl px-4">
         Tailwind uses responsive prefixes to change styles as the viewport
         becomes wider. The system is mobile-first.
@@ -60,10 +59,7 @@ function Responsive() {
 
       <div className="w-full flex flex-col items-center px-4 sm:px-8 pb-24">
         <Section id="breakpoints" title="Breakpoints">
-          <Table
-            headers={["Prefix", "Minimum width"]}
-            rows={breakpoints}
-          />
+          <Table headers={["Prefix", "Minimum width"]} rows={breakpoints} />
 
           <p>
             These are <b>min-width</b> breakpoints. Unprefixed classes apply
@@ -90,7 +86,7 @@ function Responsive() {
   <div class="w-full md:w-1/2">Right</div>
 </div>`}</CodeBlock>
 
-          <div className="w-full max-w-2xl flex flex-col md:flex-row gap-3">
+          <div className="w-full max-w-2xl mx-auto flex flex-row md:flex-row gap-3">
             <div className="flex-1 rounded-lg bg-blue-500 p-6 text-center text-white">
               Column A
             </div>
@@ -106,7 +102,7 @@ function Responsive() {
             breakpoint.
           </p>
 
-          <div className="w-full max-w-xl min-h-[16rem] p-6 bg-blue-500 sm:bg-red-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-purple-500 2xl:bg-orange-500 flex flex-col items-center justify-center text-center transition-colors">
+          <div className="w-full max-w-xl mx-auto min-h-[16rem] p-6 bg-blue-500 sm:bg-red-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-purple-500 2xl:bg-orange-500 flex flex-col items-center justify-center text-center transition-colors">
             <p className="pages-tittle !text-[1.5rem] sm:!text-[2rem]">
               Responsive Box
             </p>

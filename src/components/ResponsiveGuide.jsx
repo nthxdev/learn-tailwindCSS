@@ -21,7 +21,10 @@ const corePoints = [
 ];
 
 const unitRows = [
-  ["rem", "Font sizes, spacing, and radii. Good default; respects zoom/accessibility."],
+  [
+    "rem",
+    "Font sizes, spacing, and radii. Good default; respects zoom/accessibility.",
+  ],
   ["em", "Spacing that should scale with its own element's font size."],
   ["px", "Borders, shadows, and hairlines that should stay fixed."],
   ["%", "Widths relative to the parent container."],
@@ -148,9 +151,8 @@ function BulletList({ items }) {
 
 function ResponsiveGuide() {
   return (
-    <div className="pages">
-      <h1 className="pages-tittle">Responsive Design</h1>
-
+    <div className="pages !outline-none !outline-t-0">
+      <h1 className="pages-tittle text-center">Responsive Design</h1>
       <p className="text-white max-w-2xl text-center">
         A concise guide to choosing units, layouts, breakpoints, media rules,
         and accessibility practices.
@@ -161,10 +163,7 @@ function ResponsiveGuide() {
       </Section>
 
       <Section id="units" title="Units — What & When">
-        <Table
-          headers={["Unit", "Use it for"]}
-          rows={unitRows}
-        />
+        <Table headers={["Unit", "Use it for"]} rows={unitRows} />
 
         <p className="text-white text-sm">
           <b>Rule:</b> rem for type/spacing, %/fr for layout, px for fixed
