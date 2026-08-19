@@ -4,6 +4,7 @@ import Table from "./common/Table";
 import CodeBlock from "./common/CodeBlock";
 import Note from "./common/Note";
 
+
 const breakpoints = [
   ["sm:", "640px"],
   ["md:", "768px"],
@@ -50,7 +51,7 @@ function Responsive() {
   }, []);
 
   return (
-    <div className="pages !outline-none !outline-b-0">
+    <div className="pages">
       <h3 className="pages-tittle-interactive text-center">Responsive Interaction</h3>
       <p className="text-white/60 -mt-4 mb-4 text-center max-w-2xl px-4">
         Tailwind uses responsive prefixes to change styles as the viewport

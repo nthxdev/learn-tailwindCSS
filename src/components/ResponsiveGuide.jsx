@@ -1,5 +1,6 @@
 import Section from "./common/Section";
 import Table from "./common/Table";
+import Responsive  from "./Responsive";
 
 const corePoints = [
   {
@@ -151,7 +152,7 @@ function BulletList({ items }) {
 
 function ResponsiveGuide() {
   return (
-    <div className="pages !outline-none !outline-t-0">
+    <div className="pages">
       <h1 className="pages-tittle text-center">Responsive Design</h1>
       <p className="text-white max-w-2xl text-center">
         A concise guide to choosing units, layouts, breakpoints, media rules,
@@ -197,6 +198,7 @@ function ResponsiveGuide() {
       <Section id="checklist" title="Quick Checklist Before Shipping">
         <BulletList items={checklistPoints} />
       </Section>
+      <Responsive />
     </div>
   );
 }
